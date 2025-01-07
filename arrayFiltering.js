@@ -8,5 +8,10 @@ const peoples = [
     { name: "Edward", age: 35, gender: "male" }
 ];
 
-const filterAndMapNames = peoples.filter((people) => people.gender !== "female").map((people) => people.name)
-console.log(filterAndMapNames)
+const arrayFiltering = (peoples) => {
+    const filterAndMapNames = peoples.filter((people) => people.gender !== "female").map((people) => people.name)
+    return filterAndMapNames
+}
+
+
+console.log(arrayFiltering(peoples))
